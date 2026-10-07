@@ -1,0 +1,255 @@
+/**
+ * ==============================================================================
+ * REUSABLE UI PATTERNS & COMPONENTS
+ * Katreddy Lakshmi Kameswari Portfolio
+ * ==============================================================================
+ */
+
+/* Container baseline */
+.app-container {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-x);
+  padding-right: var(--container-padding-x);
+}
+
+.section-wrapper {
+  padding-top: var(--section-spacing-y);
+  padding-bottom: var(--section-spacing-y);
+  position: relative;
+  z-index: 1;
+}
+
+/* Glassmorphism card surfaces */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: var(--backdrop-blur);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-elevation);
+  transition: var(--transition-smooth);
+}
+
+.glass-panel:hover {
+  border-color: var(--glass-border-hover);
+  box-shadow: var(--shadow-elevation), var(--glow-pink);
+}
+
+.glass-card-subtle {
+  background: rgba(18, 10, 24, 0.45);
+  backdrop-filter: var(--backdrop-blur);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: var(--transition-smooth);
+}
+
+.glass-card-subtle:hover {
+  background: rgba(28, 14, 38, 0.6);
+  border-color: var(--glass-border);
+  transform: translateY(-3px);
+}
+
+/* Editorial Headings */
+.editorial-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  text-wrap: balance;
+  line-height: 1.15;
+}
+
+.editorial-italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.section-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-kicker::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--gradient-accent);
+}
+
+/* Gradient Text Treatments */
+.text-gradient-pink {
+  background: linear-gradient(135deg, #ff78b4 0%, #ff9bc7 40%, #bf9aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-gradient-lavender {
+  background: linear-gradient(135deg, #fceef8 0%, #ffaed2 50%, #bf9aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.85rem;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0c0610;
+  background: var(--gradient-accent);
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(255, 120, 180, 0.35);
+  transition: var(--transition-fast);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 120, 180, 0.55);
+  filter: brightness(1.06);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-full);
+  backdrop-filter: var(--backdrop-blur);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 120, 180, 0.08);
+  border-color: var(--pink);
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(255, 120, 180, 0.2);
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-icon:hover {
+  background: rgba(255, 120, 180, 0.12);
+  border-color: var(--pink);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255, 120, 180, 0.3);
+}
+
+/* Unboxed Metadata (Zero-Pill Discipline) */
+.metadata-row {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.metadata-separator {
+  color: var(--rose);
+  opacity: 0.6;
+}
+
+/* Subtle Interactive Chip */
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28rem 0.75rem;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: #f7d8eb;
+  background: rgba(255, 120, 180, 0.06);
+  border: 1px solid rgba(255, 120, 180, 0.18);
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.02em;
+  transition: var(--transition-fast);
+}
+
+.tech-tag:hover {
+  background: rgba(255, 120, 180, 0.14);
+  border-color: var(--pink);
+}
+
+/* Stat Card */
+.stat-box {
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md);
+  background: rgba(24, 12, 32, 0.5);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: var(--backdrop-blur);
+  transition: var(--transition-fast);
+}
+
+.stat-box:hover {
+  border-color: var(--glass-border);
+  transform: translateY(-2px);
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.stat-label {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

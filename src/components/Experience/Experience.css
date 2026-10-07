@@ -1,0 +1,173 @@
+/* Experience.css */
+.experience-section {
+  position: relative;
+}
+
+.experience-header-block {
+  max-width: 680px;
+  margin-bottom: 4rem;
+}
+
+/* Vertical Timeline Track */
+.timeline-container {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timeline-marker-line {
+  position: absolute;
+  top: 0.5rem;
+  bottom: 1rem;
+  left: 1.15rem;
+  width: 2px;
+  background: linear-gradient(180deg, var(--pink) 0%, var(--lavender) 60%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 999px;
+  box-shadow: 0 0 10px rgba(255, 120, 180, 0.3);
+}
+
+.timeline-items-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timeline-item-wrapper {
+  position: relative;
+}
+
+/* Glowing Timeline Node Dot */
+.timeline-node {
+  position: absolute;
+  top: 1.5rem;
+  left: -2.05rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: #09070c;
+  border: 2px solid var(--pink);
+  box-shadow: 0 0 12px var(--pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.timeline-node::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pink);
+}
+
+.timeline-item-wrapper:hover .timeline-node {
+  transform: scale(1.2);
+  border-color: #ffffff;
+  box-shadow: 0 0 20px var(--pink);
+}
+
+/* Timeline Card */
+.timeline-card {
+  position: relative;
+  padding: 2.25rem 2.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  backdrop-filter: var(--backdrop-blur);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-elevation);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-card:hover {
+  transform: translateX(6px);
+  border-color: var(--glass-border-hover);
+  box-shadow: var(--shadow-elevation), var(--glow-pink);
+}
+
+.timeline-card-placeholder {
+  border-style: dashed;
+  border-color: rgba(191, 154, 255, 0.3);
+  background: rgba(22, 12, 32, 0.5);
+}
+
+.timeline-card-placeholder:hover {
+  border-color: var(--lavender);
+  box-shadow: var(--shadow-elevation), var(--glow-lavender);
+}
+
+.timeline-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.timeline-type-pill {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--pink-light);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.timeline-date-stamp {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.timeline-role-title {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.timeline-org-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--pink);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.timeline-description {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+}
+
+.timeline-tags-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.editable-hint-banner {
+  margin-top: 1.25rem;
+  padding: 0.65rem 1rem;
+  background: rgba(191, 154, 255, 0.06);
+  border: 1px dashed rgba(191, 154, 255, 0.25);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--lavender);
+}

@@ -1,0 +1,77 @@
+/* Footer.css */
+.footer-wrapper {
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid rgba(255, 120, 180, 0.12);
+  background: rgba(9, 7, 12, 0.95);
+  padding: 4rem 0 2.5rem;
+}
+
+.footer-inner-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.footer-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav-link {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.footer-nav-link:hover {
+  color: var(--pink);
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.back-to-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--pink-light);
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.back-to-top-btn:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}

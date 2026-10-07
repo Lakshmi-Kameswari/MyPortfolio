@@ -1,0 +1,144 @@
+/* Education.css */
+.education-section {
+  position: relative;
+}
+
+.education-header-block {
+  max-width: 650px;
+  margin-bottom: 3.5rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.education-card {
+  position: relative;
+  padding: 2.25rem 2rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  backdrop-filter: var(--backdrop-blur);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-elevation);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--glass-border-hover);
+  box-shadow: var(--shadow-elevation), var(--glow-pink);
+}
+
+.edu-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.edu-period-badge {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--pink-light);
+  background: rgba(255, 120, 180, 0.08);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 120, 180, 0.2);
+}
+
+.edu-degree-title {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.edu-institution-name {
+  font-size: 0.95rem;
+  color: var(--pink);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+.edu-details-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.edu-score-box {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.edu-cgpa-number {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.edu-cgpa-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Career Focus Wide Panel */
+.career-focus-panel {
+  position: relative;
+  padding: 2.25rem 2.5rem;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(28, 14, 38, 0.75) 0%, rgba(18, 10, 26, 0.65) 100%);
+  border: 1px solid rgba(191, 154, 255, 0.25);
+  backdrop-filter: var(--backdrop-blur);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.6);
+}
+
+.career-focus-text {
+  max-width: 780px;
+}
+
+.career-focus-title {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.career-focus-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 960px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

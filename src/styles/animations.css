@@ -1,0 +1,167 @@
+/**
+ * ==============================================================================
+ * REUSABLE ANIMATIONS & KEYFRAMES
+ * Katreddy Lakshmi Kameswari Portfolio
+ * ==============================================================================
+ */
+
+/* Subtle cosmic float animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.8deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-1deg);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Pulsing atmospheric halo */
+@keyframes pulseHalo {
+  0%, 100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.06);
+  }
+}
+
+/* Orbit rotation for avatar ring */
+@keyframes orbitSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbitSpinReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Subtle gradient text motion */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Shimmer highlight across card borders */
+@keyframes borderShimmer {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+/* Shooting comet animation across cosmic canvas */
+@keyframes cometTravel {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-35deg) scaleX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    transform: translateX(120px) translateY(80px) rotate(-35deg) scaleX(1);
+  }
+  100% {
+    transform: translateX(650px) translateY(420px) rotate(-35deg) scaleX(0.2);
+    opacity: 0;
+  }
+}
+
+/* Cosmic cloud drift */
+@keyframes cloudDrift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.08);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Utility Animation Classes */
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 9s ease-in-out infinite;
+}
+
+.animate-float-gentle {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.animate-pulse-halo {
+  animation: pulseHalo 6s ease-in-out infinite;
+}
+
+.animate-orbit {
+  animation: orbitSpin 24s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbitSpinReverse 32s linear infinite;
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+.animate-cloud-drift-1 {
+  animation: cloudDrift 20s ease-in-out infinite;
+}
+
+.animate-cloud-drift-2 {
+  animation: cloudDrift 26s ease-in-out infinite reverse;
+}
+
+/* Motion Accessibility Rule */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

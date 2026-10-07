@@ -1,0 +1,79 @@
+/**
+ * ==============================================================================
+ * THEME SYSTEM & CSS VARIABLES
+ * Katreddy Lakshmi Kameswari — Futuristic AI & ML Portfolio
+ * 
+ * Edit this file to easily customize colors, glowing accents, glass opacities,
+ * typography, shadows, borders, and motion properties without touching components.
+ * ==============================================================================
+ */
+
+:root {
+  /* --- BASE COLOR PALETTE --- */
+  --bg-primary: #09070c;          /* Deep obsidian / cosmic plum void */
+  --bg-secondary: #120a17;        /* Subtle warm plum dark surface */
+  --bg-tertiary: #1b0f24;         /* Lifted cosmic surface */
+  --bg-card: rgba(18, 11, 26, 0.72); /* Glass card dark background */
+  --bg-card-hover: rgba(28, 16, 40, 0.82);
+
+  /* --- ACCENT COLORS (FEMININE FUTURISTIC GLOW) --- */
+  --pink: #ff78b4;                /* Vivid electric rose pink */
+  --pink-light: #ffaed2;          /* Soft rose highlight */
+  --rose: #d95c9a;                /* Deep elegant rose */
+  --lavender: #bf9aff;            /* Soft glowing lavender */
+  --violet: #8c52ff;              /* Deep cyber violet */
+  --cyan-accent: #7bf0ff;         /* Subtle high-tech highlight */
+
+  /* --- TEXT & CONTRAST --- */
+  --text-primary: #fcf9fc;        /* Crisp off-white display text */
+  --text-secondary: #d4c8d3;      /* High-legibility body text */
+  --text-muted: #9f8f9e;          /* Subtle metadata and labels */
+  --text-dim: #6e606d;            /* Quiet tertiary indicators */
+
+  /* --- GLASSMORPHISM & BORDERS --- */
+  --glass-bg: rgba(255, 120, 180, 0.035);
+  --glass-bg-hover: rgba(255, 120, 180, 0.07);
+  --glass-border: rgba(255, 120, 180, 0.16);
+  --glass-border-hover: rgba(255, 120, 180, 0.4);
+  --glass-border-lavender: rgba(191, 154, 255, 0.22);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-card: rgba(217, 92, 154, 0.18);
+  --backdrop-blur: blur(16px);
+  --backdrop-blur-heavy: blur(24px);
+
+  /* --- GLOW & SHADOW EFFECTS --- */
+  --glow-pink: 0 0 25px rgba(255, 120, 180, 0.25);
+  --glow-pink-strong: 0 0 45px rgba(255, 120, 180, 0.45);
+  --glow-lavender: 0 0 30px rgba(191, 154, 255, 0.25);
+  --glow-box: 0 10px 40px -10px rgba(0, 0, 0, 0.7);
+  --shadow-elevation: 0 20px 50px -12px rgba(9, 7, 12, 0.85);
+
+  /* --- GRADIENTS --- */
+  --gradient-accent: linear-gradient(135deg, var(--pink) 0%, var(--rose) 50%, var(--lavender) 100%);
+  --gradient-accent-soft: linear-gradient(135deg, rgba(255, 120, 180, 0.2) 0%, rgba(191, 154, 255, 0.15) 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 120, 180, 0.03) 100%);
+  --gradient-card-border: linear-gradient(135deg, rgba(255, 120, 180, 0.35), rgba(191, 154, 255, 0.15), rgba(255, 255, 255, 0.04));
+
+  /* --- SPACING & CONTAINER GEOMETRY --- */
+  --max-content-width: 1240px;
+  --section-spacing-y: clamp(5rem, 10vw, 8.5rem);
+  --container-padding-x: clamp(1.25rem, 4vw, 3rem);
+
+  /* --- RADIUS MATH --- */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+  --radius-full: 9999px;
+
+  /* --- TYPOGRAPHY --- */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* --- MOTION & TRANSITION TIMINGS --- */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}

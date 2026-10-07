@@ -1,0 +1,80 @@
+/* SpaceBackground.css */
+.space-background-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+}
+
+.cosmic-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Atmospheric Ambient Nebula Glows */
+.nebula-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.28;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+.nebula-1 {
+  top: -15%;
+  right: -10%;
+  width: 65vw;
+  height: 65vw;
+  max-width: 800px;
+  max-height: 800px;
+  background: radial-gradient(circle, rgba(255, 120, 180, 0.45) 0%, rgba(140, 82, 255, 0.2) 60%, transparent 80%);
+}
+
+.nebula-2 {
+  top: 45%;
+  left: -15%;
+  width: 55vw;
+  height: 55vw;
+  max-width: 750px;
+  max-height: 750px;
+  background: radial-gradient(circle, rgba(191, 154, 255, 0.4) 0%, rgba(217, 92, 154, 0.2) 50%, transparent 75%);
+}
+
+.nebula-3 {
+  bottom: -20%;
+  right: 15%;
+  width: 50vw;
+  height: 50vw;
+  max-width: 650px;
+  max-height: 650px;
+  background: radial-gradient(circle, rgba(255, 120, 180, 0.3) 0%, rgba(123, 240, 255, 0.1) 60%, transparent 80%);
+}
+
+/* Shooting comet animation element */
+.comet-streak {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.9), var(--pink));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px var(--pink));
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cosmic-canvas {
+    display: none;
+  }
+  .nebula-glow {
+    filter: blur(60px);
+    opacity: 0.18;
+  }
+}

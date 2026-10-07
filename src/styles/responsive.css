@@ -1,0 +1,135 @@
+/**
+ * ==============================================================================
+ * RESPONSIVE LAYOUT SYSTEM & MEDIA ADAPTATIONS
+ * Katreddy Lakshmi Kameswari Portfolio
+ * ==============================================================================
+ */
+
+/* --- TABLET & LAPTOP (<= 1024px) --- */
+@media (max-width: 1024px) {
+  :root {
+    --section-spacing-y: 5rem;
+  }
+
+  .hero-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3.5rem !important;
+  }
+
+  .hero-visual-column {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-bento-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .about-card-featured {
+    grid-column: span 2 !important;
+  }
+}
+
+/* --- MOBILE DEVICES (<= 768px) --- */
+@media (max-width: 768px) {
+  :root {
+    --container-padding-x: 1.25rem;
+    --section-spacing-y: 4.25rem;
+  }
+
+  /* Editorial Titles */
+  .editorial-title {
+    font-size: 2.25rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Hero Section */
+  .hero-heading {
+    font-size: 2.75rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .hero-actions-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions-group .btn-primary,
+  .hero-actions-group .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* About Bento Grid Stacking */
+  .about-bento-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-card-featured {
+    grid-column: span 1 !important;
+  }
+
+  /* Skills Grid */
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Timeline */
+  .timeline-container {
+    padding-left: 1.5rem !important;
+  }
+
+  .timeline-marker-line {
+    left: 0.75rem !important;
+  }
+
+  .timeline-node {
+    left: 0.35rem !important;
+  }
+
+  /* Projects Slider Controls */
+  .project-slider-nav {
+    width: 100%;
+    justify-content: space-between !important;
+  }
+
+  /* Education Cards */
+  .education-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Contact layout */
+  .contact-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+}
+
+/* --- SMALL MOBILE (<= 480px) --- */
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 2.25rem !important;
+  }
+
+  .hero-portrait-frame {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  /* Floating tags on mobile: reposition neatly below portrait without overflow */
+  .mobile-tag-flow {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    margin-top: 1.5rem !important;
+  }
+
+  .mobile-hide-floating {
+    display: none !important;
+  }
+
+  .stat-number {
+    font-size: 1.85rem !important;
+  }
+}
