@@ -10,6 +10,8 @@
  * ==============================================================================
  */
 
+const BASE_URL = import.meta.env.BASE_URL || '/';
+
 export const personalInfo = {
   name: "Katreddy Lakshmi Kameswari",
   shortName: "Lakshmi Kameswari",
@@ -28,8 +30,8 @@ export const personalInfo = {
   github: "https://github.com/Lakshmi-Kameswari",
   
   // File paths in /public directory
-  profileImage: "/assets/profile.jpg",
-  resumePath: "/assets/resume.pdf",
+  profileImage: `${BASE_URL}assets/profile.jpg`,
+  resumePath: `${BASE_URL}assets/resume.pdf`,
 
   // Editorial Hero Taglines & Description
   heroDescription:
@@ -169,7 +171,7 @@ export const experiencesData = [
     organization: "Your Next Company / Organization Name",
     location: "Remote / Hybrid / On-site",
     description:
-      "Open to upcoming internships and research collaborations. Replace this placeholder card easily inside src/data/portfolioData.js with your next role, training program, or technical achievement.",
+      "Open to upcoming internships and research collaborations. Replace this placeholder card easily inside src/data/portfolioData.js with your next role, training program, or technical achievem[...]",
     tags: ["Machine Learning", "Python", "Full Stack", "Problem Solving"],
     isEditablePlaceholder: true
   }
@@ -191,7 +193,7 @@ export const projectsData = [
     technologies: ["Python", "Socket Programming", "Tkinter"],
     githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Python_Programming/tree/main/chat-application.py",
     liveUrl: null,
-    image: "/assets/project-images/chat-app.jpg"
+    image: `${BASE_URL}assets/project-images/chat-app.jpg`
   },
   {
     id: "proj-2",
@@ -209,7 +211,7 @@ export const projectsData = [
     technologies: ["Python", "Tkinter", "GUI Development"],
     githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Python_Programming/tree/main/bmi-calculator-gui",
     liveUrl: null,
-    image: "/assets/project-images/python-tools.jpg"
+    image: `${BASE_URL}assets/project-images/python-tools.jpg`
   },
   {
     id: "proj-3",
@@ -226,7 +228,7 @@ export const projectsData = [
     technologies: ["Python", "Tkinter", "Cybersecurity Basics"],
     githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Python_Programming/tree/main/password-generator-gui",
     liveUrl: null,
-    image: "/assets/project-images/python-tools.jpg"
+    image: `${BASE_URL}assets/project-images/python-tools.jpg`
   },
   {
     id: "proj-4",
@@ -243,7 +245,7 @@ export const projectsData = [
     technologies: ["HTML5", "CSS3", "Responsive UI"],
     githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Web_Development_and_Designing",
     liveUrl: "https://lakshmi-kameswari.github.io/OIBSIP-Web_Development_and_Designing/",
-    image: "/assets/project-images/landing-page.jpg"
+    image: `${BASE_URL}assets/project-images/landing-page.jpg`
   },
   {
     id: "proj-5",
@@ -260,7 +262,7 @@ export const projectsData = [
     technologies: ["HTML5", "CSS3", "JavaScript"],
     githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Web_Development_and_Designing",
     liveUrl: "https://lakshmi-kameswari.github.io/OIBSIP-Web_Development_and_Designing/",
-    image: "/assets/project-images/landing-page.jpg"
+    image: `${BASE_URL}assets/project-images/landing-page.jpg`
   },
   {
     id: "proj-6",
@@ -277,7 +279,7 @@ export const projectsData = [
     technologies: ["JavaScript", "HTML5", "CSS3"],
     githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Web_Development_and_Designing",
     liveUrl: "https://lakshmi-kameswari.github.io/OIBSIP-Web_Development_and_Designing/",
-    image: "/assets/project-images/landing-page.jpg"
+    image: `${BASE_URL}assets/project-images/landing-page.jpg`
   }
 ];
 
@@ -325,5 +327,5 @@ export const contactData = {
   linkedin: "https://www.linkedin.com/in/lakshmi-kameswariii-929166370",
   github: "https://github.com/Lakshmi-Kameswari",
   location: "Guntur, Andhra Pradesh, India",
-  resumePath: "/assets/resume.pdf"
+  resumePath: `${BASE_URL}assets/resume.pdf`
 };
