@@ -30,7 +30,7 @@ export const personalInfo = {
   github: "https://github.com/Lakshmi-Kameswari",
   
   // Replace this file whenever you want to update your profile image.
-  profileImage: `${BASE_URL}assets/profile-photo.jpg`,
+  profileImage: `${BASE_URL}assets/profile.jpeg`,
   resumePath: `${BASE_URL}assets/resume.pdf`,
 
   // Editorial Hero Taglines & Description
