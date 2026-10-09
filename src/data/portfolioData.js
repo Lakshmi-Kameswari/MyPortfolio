@@ -18,19 +18,19 @@ export const personalInfo = {
   firstName: "Katreddy",
   highlightName: "Lakshmi Kameswari.",
   initials: "LK",
-  role: "Aspiring AI & ML Engineer · Web Developer",
+  role: "Aspiring AI & ML Engineer · Full Stack Developer",
   focusAreas: "Artificial Intelligence · Machine Learning · Python · Web Development",
   degree: "B.Tech CSE (AI & ML)",
   batch: "2023–2027",
-  cgpa: "9.0",
+  cgpa: "8.82",
   graduationYear: "2027",
   location: "Guntur, Andhra Pradesh, India",
   email: "lakshmikameswari04@gmail.com",
   linkedin: "https://www.linkedin.com/in/lakshmi-kameswariii-929166370",
   github: "https://github.com/Lakshmi-Kameswari",
   
-  // File paths in /public directory
-  profileImage: `${BASE_URL}assets/profile.jpg`,
+  // Replace this file whenever you want to update your profile image.
+  profileImage: `${BASE_URL}assets/profile-photo.jpg`,
   resumePath: `${BASE_URL}assets/resume.pdf`,
 
   // Editorial Hero Taglines & Description
@@ -66,7 +66,7 @@ export const aboutData = {
       tag: "Profile",
       title: "Engineering with creativity and purpose.",
       content:
-        "Building a solid academic and technical foundation in Computer Science with a specialized focus on Artificial Intelligence and Machine Learning algorithms.",
+        "Building a strong academic and technical foundation in Computer Science with specialized focus on Artificial Intelligence, machine learning systems, and practical problem solving.",
       highlight: "AI & ML Specialization"
     },
     {
@@ -74,7 +74,7 @@ export const aboutData = {
       tag: "Strength",
       title: "Consistent learner.",
       content:
-        "Proactive approach to coding every day, experimenting with new UI frameworks, exploring data logic, and refining problem-solving abilities.",
+        "I learn by building: experimenting with modern UI frameworks, improving data logic, refining coding habits, and turning each challenge into a practical skill.",
       highlight: "Continuous Growth"
     },
     {
@@ -82,22 +82,14 @@ export const aboutData = {
       tag: "Objective",
       title: "Grow through practical work.",
       content:
-        "Actively seeking engineering internships, hands-on collaborations, and technical challenges where machine learning and modern web design intersect.",
+        "Actively seeking internships, research collaborations, and professional opportunities where machine learning, software engineering, and thoughtful product design intersect.",
       highlight: "Open to Opportunities"
-    },
-    {
-      id: "bento-4",
-      tag: "Location",
-      title: "Guntur",
-      subtitle: "Andhra Pradesh, India",
-      content: "Based in Guntur, available for on-site, hybrid, or global remote collaborations.",
-      highlight: "India · Global Remote"
     }
   ],
 
   // Key Statistics
   statistics: [
-    { label: "CGPA", value: "9.0", subtext: "Academic Performance" },
+    { label: "CGPA", value: "8.82", subtext: "Academic Performance" },
     { label: "Graduation", value: "2027", subtext: "B.Tech Batch" },
     { label: "Completed Projects", value: "6+", subtext: "AI, Python & Web" }
   ]
@@ -106,180 +98,206 @@ export const aboutData = {
 export const skillsData = [
   {
     name: "Python",
-    percentage: 90,
-    category: "Programming & AI",
-    description: "Core scripting, OOP, Tkinter GUI, socket programming, data structures",
+    percentage: 92,
+    category: "AI & Programming",
+    description: "Core scripting, automation, data handling, algorithmic thinking, and practical AI prototyping.",
     glowColor: "pink"
   },
   {
-    name: "HTML & CSS",
-    percentage: 95,
-    category: "Frontend UI",
-    description: "Semantic HTML5, modern CSS3 layout, responsive design, animations",
-    glowColor: "rose"
-  },
-  {
-    name: "JavaScript",
-    percentage: 85,
-    category: "Web Development",
-    description: "ES6+, DOM manipulation, asynchronous logic, interactive frontend interfaces",
+    name: "Java",
+    percentage: 82,
+    category: "Core Engineering",
+    description: "Object-oriented programming, backend logic, problem solving, and strong software fundamentals.",
     glowColor: "lavender"
   },
   {
     name: "Machine Learning",
-    percentage: 80,
-    category: "AI & Intelligent Systems",
-    description: "Supervised & unsupervised learning concepts, algorithm evaluation, model exploration",
+    percentage: 86,
+    category: "AI & Data Science",
+    description: "Model concepts, evaluation methods, predictive workflows, and practical ML experimentation.",
     glowColor: "pink"
   },
   {
-    name: "SQL",
-    percentage: 75,
-    category: "Database Systems",
-    description: "Relational database queries, schema design, data filtering, and aggregations",
+    name: "TensorFlow / OpenCV",
+    percentage: 78,
+    category: "Computer Vision & AI",
+    description: "Building intelligent pipelines for image processing, feature extraction, and AI-driven applications.",
+    glowColor: "rose"
+  },
+  {
+    name: "React & JavaScript",
+    percentage: 88,
+    category: "Modern Web",
+    description: "User interfaces, responsive layouts, frontend logic, and interactive digital experiences.",
+    glowColor: "lavender"
+  },
+  {
+    name: "Node.js / Express",
+    percentage: 80,
+    category: "Full-Stack Development",
+    description: "Server-side logic, API development, and building connected web applications from end-to-end.",
+    glowColor: "pink"
+  },
+  {
+    name: "SQL & Data Handling",
+    percentage: 76,
+    category: "Data Engineering",
+    description: "Querying, filtering, structuring, and making sense of data in practical application workflows.",
     glowColor: "rose"
   },
   {
     name: "Git & GitHub",
-    percentage: 78,
-    category: "Version Control",
-    description: "Repository workflows, version branching, open-source practices, collaboration",
+    percentage: 84,
+    category: "Collaboration",
+    description: "Version control, project tracking, clean commits, and team-ready workflows.",
     glowColor: "lavender"
   }
 ];
 
 export const experiencesData = [
   {
-    id: "exp-oasis",
+    id: "exp-smartbridge",
     number: "01",
+    period: "May 2026 – Jun 2026",
+    type: "Internship",
+    role: "MERN Stack Intern",
+    organization: "Smartbridge",
+    location: "Remote / Hybrid",
+    description:
+      "Built Shopz, an online shopping web application using the MERN stack. Worked on frontend flow, product-focused UI structure, and full-stack integration for a practical e-commerce experience.",
+    tags: ["MERN Stack", "React", "Node.js", "MongoDB", "Shopz"],
+    isEditablePlaceholder: false
+  },
+  {
+    id: "exp-oasis-python",
+    number: "02",
+    period: "Apr 2026 – May 2026",
+    type: "Internship",
+    role: "Python Programming Intern",
+    organization: "Oasis Infobyte",
+    location: "Virtual",
+    description:
+      "Developed Python-based projects including a chatbot and password generator application, building practical skills in logic design, user interaction, and script-based problem solving.",
+    tags: ["Python", "Chatbot", "Password Generator", "Automation"],
+    isEditablePlaceholder: false
+  },
+  {
+    id: "exp-oasis-web",
+    number: "03",
     period: "Feb 2026 – Mar 2026",
     type: "Virtual Internship",
     role: "Web Development Virtual Intern",
     organization: "Oasis Infobyte",
     location: "Virtual",
     description:
-      "Developed responsive web projects using HTML, CSS, and JavaScript; designed user-friendly interfaces and strengthened frontend development and problem-solving skills.",
+      "Created responsive web interfaces and landing-page experiences using HTML, CSS, and JavaScript, improving design sensibility and frontend implementation skills.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     isEditablePlaceholder: false
-  },
-  {
-    id: "exp-placeholder",
-    number: "02",
-    period: "Upcoming / Open Opportunity",
-    type: "Internship & Project Experience",
-    role: "AI & ML / Software Development Intern",
-    organization: "Your Next Company / Organization Name",
-    location: "Remote / Hybrid / On-site",
-    description:
-      "Open to upcoming internships and research collaborations. Replace this placeholder card easily inside src/data/portfolioData.js with your next role, training program, or technical achievem[...]",
-    tags: ["Machine Learning", "Python", "Full Stack", "Problem Solving"],
-    isEditablePlaceholder: true
   }
 ];
 
 export const projectsData = [
   {
-    id: "proj-1",
+    id: "proj-shopz",
     number: "01",
-    title: "Chat Application (Client–Server)",
-    category: "Networking & Python GUI",
+    title: "Shopz — MERN Stack E-Commerce App",
+    category: "Full-Stack Web Development",
     description:
-      "A real-time text-based chat application built using Python socket programming and Tkinter GUI. It allows multiple users to communicate in real-time using a client-server architecture.",
+      "A practical online shopping application built during the Smartbridge internship, focused on product-driven user experience and full-stack web functionality.",
     features: [
-      "Real-time multi-client messaging",
-      "Client-server communication using sockets",
-      "Interactive desktop Tkinter GUI"
+      "Responsive shopping interface",
+      "Product-focused user flow",
+      "MERN stack implementation and integration"
     ],
-    technologies: ["Python", "Socket Programming", "Tkinter"],
-    githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Python_Programming/tree/main/chat-application.py",
-    liveUrl: null,
-    image: `${BASE_URL}assets/project-images/chat-app.jpg`
+    technologies: ["React", "Node.js", "Express", "MongoDB", "MERN"],
+    githubUrl: "https://github.com/Lakshmi-Kameswari",
+    liveUrl: "https://example.com/shopz-demo",
+    image: `${BASE_URL}assets/project-images/project-placeholder.svg`
   },
   {
-    id: "proj-2",
+    id: "proj-chatbot",
     number: "02",
-    title: "BMI Calculator (GUI)",
-    category: "Python Desktop Application",
+    title: "AI Chatbot Application",
+    category: "Python & Conversational AI",
     description:
-      "A professional GUI-based BMI calculator built using Tkinter. Calculates Body Mass Index and provides corresponding health categories.",
+      "A Python-based chatbot project that demonstrates interactive conversation flow, basic automation, and user-focused logic design for simple AI experiences.",
     features: [
-      "Instant BMI calculation",
-      "WHO health category classification",
-      "Input validation and boundary checking",
-      "One-click reset functionality"
+      "Interactive conversational flow",
+      "Basic AI logic and input processing",
+      "Practical Python project experience"
     ],
-    technologies: ["Python", "Tkinter", "GUI Development"],
-    githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Python_Programming/tree/main/bmi-calculator-gui",
-    liveUrl: null,
-    image: `${BASE_URL}assets/project-images/python-tools.jpg`
+    technologies: ["Python", "Chatbot", "Logic Design"],
+    githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Python_Programming",
+    liveUrl: "https://example.com/chatbot-demo",
+    image: `${BASE_URL}assets/project-images/project-placeholder.svg`
   },
   {
-    id: "proj-3",
+    id: "proj-password",
     number: "03",
-    title: "Password Generator (GUI)",
-    category: "Security Utility",
+    title: "Password Generator Utility",
+    category: "Python Security Tool",
     description:
-      "A customizable password generator allowing users to adjust length and complexity rules to generate resilient security credentials.",
+      "A lightweight password generator built for secure credential creation with customizable length and complexity in a user-friendly interface.",
     features: [
-      "Adjustable password length",
-      "Configurable numbers and symbols toggles",
-      "Instant copy to clipboard functionality"
+      "Custom length control",
+      "Number and symbol toggle options",
+      "Practical security utility design"
     ],
-    technologies: ["Python", "Tkinter", "Cybersecurity Basics"],
-    githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Python_Programming/tree/main/password-generator-gui",
-    liveUrl: null,
-    image: `${BASE_URL}assets/project-images/python-tools.jpg`
+    technologies: ["Python", "Tkinter", "Security Basics"],
+    githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Python_Programming",
+    liveUrl: "https://example.com/password-generator-demo",
+    image: `${BASE_URL}assets/project-images/project-placeholder.svg`
   },
   {
-    id: "proj-4",
+    id: "proj-landing",
     number: "04",
     title: "Landing Page Development",
     category: "Web Engineering",
     description:
-      "A responsive and visually engaging landing page focused on clean layout, modern styling, and seamless user experience across devices.",
+      "A responsive and visually engaging landing page focused on clean layout, modern styling, and a polished user experience across devices.",
     features: [
       "Responsive multi-device layout",
-      "Smooth modern styling and hover states",
-      "Fast static rendering and semantic HTML"
+      "Modern visual hierarchy and hover states",
+      "Semantic HTML and clean frontend structure"
     ],
     technologies: ["HTML5", "CSS3", "Responsive UI"],
     githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Web_Development_and_Designing",
     liveUrl: "https://lakshmi-kameswari.github.io/OIBSIP-Web_Development_and_Designing/",
-    image: `${BASE_URL}assets/project-images/landing-page.jpg`
+    image: `${BASE_URL}assets/project-images/project-placeholder.svg`
   },
   {
-    id: "proj-5",
+    id: "proj-portfolio",
     number: "05",
     title: "Personal Portfolio Website",
     category: "Interactive Frontend",
     description:
-      "A stylish interactive portfolio demonstrating skills, projects, and education with custom animations and smooth navigation.",
+      "A portfolio built to present projects, technical strengths, and professional narrative in a clean, modern, and engaging format.",
     features: [
-      "Interactive project and skill showcases",
-      "Custom CSS keyframe transitions and glows",
-      "Mobile-optimized touch navigation"
+      "Interactive project showcase",
+      "Custom visual storytelling",
+      "Mobile-friendly portfolio presentation"
     ],
-    technologies: ["HTML5", "CSS3", "JavaScript"],
-    githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Web_Development_and_Designing",
-    liveUrl: "https://lakshmi-kameswari.github.io/OIBSIP-Web_Development_and_Designing/",
-    image: `${BASE_URL}assets/project-images/landing-page.jpg`
+    technologies: ["React", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/Lakshmi-Kameswari",
+    liveUrl: "https://example.com/portfolio-demo",
+    image: `${BASE_URL}assets/project-images/project-placeholder.svg`
   },
   {
-    id: "proj-6",
+    id: "proj-temp",
     number: "06",
     title: "Temperature Converter",
     category: "Web Utility",
     description:
-      "An intuitive web utility using JavaScript logic to convert values between Celsius, Fahrenheit, and Kelvin in real time.",
+      "A straightforward JavaScript utility for converting temperature values between Celsius, Fahrenheit, and Kelvin in real time.",
     features: [
-      "Instant bidirectional calculations",
-      "Support for Celsius, Fahrenheit, and Kelvin",
-      "Real-time input validation"
+      "Instant bidirectional conversion",
+      "Support for major temperature scales",
+      "Clean, fast frontend logic"
     ],
     technologies: ["JavaScript", "HTML5", "CSS3"],
     githubUrl: "https://github.com/Lakshmi-Kameswari/OIBSIP-Web_Development_and_Designing",
-    liveUrl: "https://lakshmi-kameswari.github.io/OIBSIP-Web_Development_and_Designing/",
-    image: `${BASE_URL}assets/project-images/landing-page.jpg`
+    liveUrl: "https://example.com/temperature-demo",
+    image: `${BASE_URL}assets/project-images/project-placeholder.svg`
   }
 ];
 
@@ -288,7 +306,7 @@ export const educationData = [
     period: "2023 – 2027",
     degree: "B.Tech — CSE (AI & ML)",
     institution: "Kallam Haranadhareddy Institute of Technology",
-    cgpa: "9.0",
+    cgpa: "8.82",
     badge: "Undergraduate",
     description:
       "Specializing in Artificial Intelligence and Machine Learning fundamentals, Data Structures, Algorithms, Python programming, and Object-Oriented Engineering."
@@ -314,9 +332,9 @@ export const educationData = [
 ];
 
 export const careerFocusData = {
-  title: "AI & ML + Web Development",
+  title: "AI-driven product thinking + full-stack execution",
   description:
-    "Building practical skills through coursework, internships, personal projects, and continuous learning."
+    "Building practical, production-ready projects with AI tools, modern web development workflows, and efficient problem-solving for real-world applications."
 };
 
 export const contactData = {

@@ -1,0 +1,21 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="700" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171826"/>
+      <stop offset="0.5" stop-color="#1D223D"/>
+      <stop offset="1" stop-color="#2A1C3A"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="280" y1="200" x2="560" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF78B4"/>
+      <stop offset="1" stop-color="#BF9AFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" rx="40" fill="url(#bg)"/>
+  <circle cx="400" cy="310" r="170" fill="url(#ring)" fill-opacity="0.18"/>
+  <circle cx="400" cy="310" r="152" stroke="url(#ring)" stroke-width="8" stroke-opacity="0.85"/>
+  <circle cx="400" cy="290" r="92" fill="#F2E7FF" fill-opacity="0.82"/>
+  <path d="M300 560C322 490 358 455 400 455C442 455 478 490 500 560" stroke="url(#ring)" stroke-width="22" stroke-linecap="round"/>
+  <path d="M332 330C332 270.499 380.499 222 440 222H460C480.987 222 498.5 239.513 498.5 260.5V264.5C498.5 285.487 480.987 303 460 303H430C411.222 303 396.5 317.722 396.5 336.5V350.5C396.5 369.278 411.222 384 430 384H470C491.539 384 509 401.461 509 423V430C509 452.091 491.091 470 469 470H332V330Z" fill="#F2E7FF" fill-opacity="0.92"/>
+  <rect x="170" y="620" width="460" height="80" rx="40" fill="#151A2D" fill-opacity="0.55"/>
+  <text x="400" y="665" text-anchor="middle" fill="#F8F6FF" font-size="38" font-family="Segoe UI, Arial, sans-serif" font-weight="600">Profile Photo</text>
+</svg>
